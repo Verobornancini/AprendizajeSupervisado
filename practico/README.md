@@ -40,14 +40,3 @@ Ese archivo debe ser subido a kaggle como lo explicamos arriba: haciendo click e
 * Usamos one-hot encoding para lidear con las variables categóricas. Para ello, usamos la función "get_dummies" de pandas. Hicimos esto último sobre todo el universo de datos, asumiendo el riesgo que esto conlleva (puede darse el caso en que creemos muchas nuevas features para valores que no son vistos en los datos de "train").
 * No estamos usando los datos de Upc y FinelineNumber. Estos datos parecen ser muy relevantes, quizás los puedan agregar.
 
-## **Resultados obtenidos:**
-En la carpeta Notebook se incluyen aquellas con las que se obtuvieron los mejores valores para accuracy:
-
-
-
-| Notebbok | Accuracy | Modelo utilizado |Parámetros |archivo generado|
-| -------- | -------- | -------- |-------- |-------- |
-|  [baseline_modelo_7.ipynb](https://github.com/Verobornancini/AprendizajeSupervisado/blob/master/practico/src/baseline_modelo_7.ipynb) | 0.690068 | Random Forest |{'class_weight': 'balanced_subsample', 'min_samples_leaf': 1, 'min_samples_split': 3, 'random_state': 0}|submission_7.csv |
-| [baseline_modelo_4.ipynb](https://github.com/Verobornancini/AprendizajeSupervisado/blob/master/practico/src/baseline_modelo_4.ipynb)    | 0.690132 | Random Forest|{'class_weight': 'balanced_subsample', 'criterion': 'gini', 'min_samples_leaf': 1, 'min_samples_split': 2, 'random_state': 0} |submission_4.csv |
-| [baseline_modelo_4.ipynb](https://github.com/Verobornancini/AprendizajeSupervisado/blob/master/practico/src/baseline_modelo_8.ipynb)  | 0.691645   | Random Forest | {'class_weight': 'balanced', 'min_samples_leaf': 1, 'min_samples_split': 3, 'n_estimators': 150, 'random_state': 0}| submission_8.csv |
-
